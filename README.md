@@ -13,9 +13,6 @@ metadata:
     Open Source: 💻
     Games: 🕹️
     SO: Gnu/Linux
-  contact:
-    telegram: https://t.me/Roger_dhuster
-    email: rogelio.interino@live.com
 ```
 
 
