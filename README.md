@@ -1,7 +1,7 @@
 #  Hi! 👋 
 
 ```yaml
-apiVersion: v30 🧑
+apiVersion: v31 🧑
 kind: Human, Mexican 🇲🇽
 metadata:
   name: Rogelio Interino
