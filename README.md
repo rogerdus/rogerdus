@@ -1,74 +1,39 @@
-#  Hi! 👋 
+<h1 align="center">Hi 👋, I'm Rogelio</h1>
+<h3 align="center">💻 Web Developer from Mexico 🇲🇽</h3>
 
-```javascript
- class Specifications {
-  constructor(
-    public specializeIn: string,
-    public purpose: string
-  ) {}
-}
+---
 
-class Favorites {
-  constructor(
-    public technology: string,
-    public openSource: string,
-    public games: string,
-    public so: string
-  ) {}
-}
+## 🧑‍💻 About Me (as code)
 
-class Metadata {
+```ts
+class Developer {
   constructor(
     public name: string,
     public nationality: string,
-    public specifications: Specifications,
-    public favorites: Favorites
+    public role: string,
+    public purpose: string,
+    public favorites: {
+      technology: string;
+      openSource: string;
+      games: string;
+      os: string;
+    }
   ) {}
-}
 
-export class Person {
-  private apiVersion: string;
-  private kind: string;
-  private metadata: Metadata;
-
-  constructor(apiVersion: string, metadata: Metadata) {
-    this.apiVersion = apiVersion;
-    this.kind = "Human";
-    this.metadata = metadata;
-  }
-
-  // Getters (encapsulación)
-  getApiVersion(): string {
-    return this.apiVersion;
-  }
-
-  getKind(): string {
-    return this.kind;
-  }
-
-  getMetadata(): Metadata {
-    return this.metadata;
-  }
-
-  // Método de dominio (ejemplo)
-  describe(): string {
-    return `${this.metadata.name} is a ${this.metadata.nationality} ${this.metadata.specifications.specializeIn}`;
+  introduce() {
+    return `Hi! 👋 I'm ${this.name}, a ${this.nationality} ${this.role}.`;
   }
 }
 
-// Uso
-const rogelio = new Person(
-  "v32",
-  new Metadata(
-    "Rogelio Interino",
-    "Mexican",
-    new Specifications(
-      "Web Developer",
-      "Learn new programming languages and more about operating systems"
-    ),
-    new Favorites("🕸️", "💻", "🕹️", "GNU/Linux")
-  )
+const me = new Developer(
+  "Rogelio Interino",
+  "Mexican 🇲🇽",
+  "Web Developer",
+  "Learning new programming languages and exploring operating systems",
+  {
+    technology: "🕸️",
+    openSource: "💻",
+    games: "🕹️",
+    os: "GNU/Linux 🐧",
+  }
 );
-
-console.log(rogelio.describe());
-```
